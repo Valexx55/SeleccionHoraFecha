@@ -36,11 +36,13 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
             {
                 case R.id.cajaFecha:
                     Log.d("ETIQUETA_LOG", "Foco en CAJA FECHA");
-                    //TODO SACAR UNA VENTANA EMERGENTE PARA LA FECHA
+                    //creo un díalogo y con show, lo muestro
+                    new DialogoSeleccionFecha().show(getSupportFragmentManager(), "CALENDARIO");
                     break;
                 case R.id.cajaHora:
                     Log.d("ETIQUETA_LOG", "Foco en CAJA HORA");
                     //TODO SACAR UNA VENTANA EMERGENTE PARA LA HORA
+                    new DialogoSeleccionHora().show(getSupportFragmentManager(), "RELOJ");
                     break;
             }
 
