@@ -41,8 +41,7 @@ public class DialogoSeleccionFecha extends DialogFragment implements DatePickerD
         mes++;
         String fecha = diaMes +"/" + mes +"/"+anio;
         Log.d("ETIQUETA_LOG", fecha);
-        //TODO PENDIENTE MOSTARR LA FECHA SELECCIONADA EN ESTE DIALOGO EN LA ACTIVIDAD
-        //opción 1 guardar un fichero de preferencias
+
         MainActivity mainActivity = (MainActivity) getActivity();
         mainActivity.mostrarFechaSeleccionada(fecha);//ACTUALIZO LA ACTIVIDAD PRINCIPAL
 

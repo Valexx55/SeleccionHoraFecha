@@ -56,4 +56,10 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
         Log.d("ETIQUETA_LOG", "mostrarFechaSeleccionada " +fecha);
         this.caja_fecha.setText(fecha);
     }
+
+    public void mostrarHoraSeleccionada (String hora)
+    {
+        Log.d("ETIQUETA_LOG", "mostrarHoraSeleccionada " +hora);
+        this.caja_hora.setText(hora);
+    }
 }
