@@ -30,7 +30,7 @@ public class DialogoSeleccionHora extends DialogFragment implements TimePickerDi
         minutos = calendario_actual.get(Calendar.MINUTE);
 
 
-
+        //getActivity() - es la Activida "Padre" - MainActivity
         calendario = new TimePickerDialog(getActivity(), this, hora, minutos, true);
 
         return calendario;
